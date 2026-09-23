@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Notas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciador de Notas</h1>
+
+    <form id="notaForm">
+      <input type="hidden" id="notaId" />
+      <input type="text" id="titulo" placeholder="Título" required />
+      <textarea id="descricao" placeholder="Descrição" required></textarea>
+      <input type="number" id="nota" placeholder="Nota (0-10)" step="0.1" min="0" max="10" required />
+      <button type="submit">Salvar</button>
+      <button type="button" id="cancelar" style="display:none">Cancelar</button>
+    </form>
+
+    <ul id="listaNotas"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
